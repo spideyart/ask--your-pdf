@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ask-your-pdf — upload a PDF, ask a question, get a cited answer. No API key, no signup.">
+<title>ask-your-pdf — RAG Research Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main>
+  <header class="hero">
+    <span class="badge">RAG &middot; Cited Answers &middot; No API Key</span>
+    <h1>ask<span>-your-</span>pdf</h1>
+    <p class="tagline">Upload a PDF, ask a question, and get an answer grounded in that document — with citations. No API key, no signup.</p>
+  </header>
+
+  <section class="card">
+    <h2><span class="step">1</span> Load a document</h2>
+    <form id="upload-form">
+      <input type="file" id="file" accept=".pdf" required>
+      <button type="submit">Upload &amp; Index PDF</button>
+      <button type="button" id="sample-btn">Load sample document</button>
+    </form>
+    <p id="status">No document loaded yet. Upload a PDF, or load the sample.</p>
+  </section>
+
+  <section class="card">
+    <h2><span class="step">2</span> Ask a question</h2>
+    <form id="ask-form">
+      <input type="text" id="question" placeholder="e.g. How does Wi-Fi send data?" required>
+      <button type="submit">Ask</button>
+    </form>
+    <div id="answer"></div>
+    <div id="citations"></div>
+    <details id="sources-box" hidden>
+      <summary>Source passages</summary>
+      <div id="sources"></div>
+    </details>
+  </section>
+
+  <section class="card">
+    <h2><span class="step">3</span> Quiz yourself</h2>
+    <button type="button" id="quiz-btn">Generate quiz from this document</button>
+    <div id="quiz"></div>
+  </section>
+
+  <section class="card">
+    <h2>History</h2>
+    <ul id="history"></ul>
+  </section>
+
+  <p class="footer">Royal black &middot; Gold accents &middot; Answers stay grounded in your document</p>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

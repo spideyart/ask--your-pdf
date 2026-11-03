@@ -1,0 +1,11 @@
+A Short Guide to Wi-Fi
+
+Wi-Fi is a wireless networking technology that lets devices such as phones, laptops, and tablets connect to the internet without cables. A Wi-Fi router connects to the internet through a broadband connection, and it broadcasts radio waves in its local area. Devices with a Wi-Fi radio can detect those waves and join the network.
+
+Wi-Fi sends data by turning digital information into radio signals. The router breaks data into small packets, and each packet is sent over the air as a radio wave. The receiving device collects the packets and reassembles them in the correct order, so a web page, a video, or a message arrives complete even though it travelled in pieces.
+
+The strength of a Wi-Fi signal falls with distance and with obstacles. Walls, floors, metal objects, and other electronic devices can weaken the signal or cause interference. A device close to the router usually gets a stronger signal and a faster connection than a device far away or behind several walls.
+
+Wi-Fi networks are identified by a name called an SSID, and many networks are protected by a password. When a device joins a protected network, it must prove it knows the password before the router allows it to send and receive data. Public Wi-Fi networks may be open, which means anyone nearby can join, but open networks are less private than password-protected networks.
+
+Photosynthesis is a different process, included here only as a contrast. In photosynthesis, green plants use sunlight, water, and carbon dioxide to make food and release oxygen. That process happens in leaves, not in routers, and it has nothing to do with how Wi-Fi sends data.
